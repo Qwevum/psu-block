@@ -145,7 +145,7 @@ class PsuBlock extends LitElement {
       <div class="card">                
         <div class="content">                    
             <div>
-              88,000+<br> &nbsp;&nbsp;&nbsp;students
+              <slot></slot>
             </div>
         </div>  
       <div class="card2">                
