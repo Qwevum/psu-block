@@ -1,5 +1,12 @@
 <!doctype html>
 <html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
 
 <head>
   <meta charset="utf-8">
@@ -7,23 +14,75 @@
   <meta name="Description" content="Put your description here.">
   <base href="/">
 
+
   <style>
     html,
+    .container1 {
+      margin: 20px;
+      margin-left: 70px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: left;
+      gap: 20px;
+    }
+    .container2 {
+      margin-left: 70px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: left;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .container3 {
+      display: flex;
+      margin-left: 70px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: left;
+      gap: 20px;
+      margin-top: 20px;
+    }
     body {
       margin: 0;
       padding: 0;
       font-family: sans-serif;
       background-color: #ededed;
     }
-    
+   
   </style>
   <title>psu-block</title>
 </head>
 
+
 <body>
-  <psu-block></psu-block>
+ 
+  <div class="container1">
+    <psu-block stateOne boxtext1="88,000+ students">
+      <a href="https://admissions.psu.edu/apply/statistics/"></a>
+    </psu-block>
+    <psu-block stateTwo boxtext1="58%" lineshape="-" boxtext2="Of students are Pennsylvania residents."></psu-block>
+    <psu-block stateThree boxtext1="Students from 50 states and 145 countries"></psu-block>
+  </div>
+
+
+  <div class= "container2">
+    <psu-block stateFour link1 cardoverlay boxtext1="Check out Undergraduate Admission statistics" ></psu-block>
+    <psu-block stateOne boxtext1="Nearly 10,000 international students"></psu-block>
+    <psu-block stateTwo boxtext1="39%" lineshape="-" boxtext2="Of students are from a diverse background"></psu-block>
+  </div>
+
+
+  <div class= "container3">
+    <psu-block stateFive boxtext1="7,900+ faculty across all campuses"></psu-block>
+    <psu-block stateFive boxtext1="759,000+ alumni"></psu-block>
+    <psu-block stateSix cardoverlay boxtext1="Check out Undergraduate Admission statistics"></psu-block>
+  </div>  
+
 
   <script type="module" src="./src/psu-block.js"></script>
 </body>
+
 
 </html>
