@@ -6,7 +6,15 @@ class PsuBlock extends LitElement {
   static properties = {
     header: { type: String },
     card: { type: String },
-    active: { type: Boolean, reflect: true}
+    active: { type: Boolean, reflect: true},
+    
+    stateOne: { type: Boolean, reflect: true},
+    stateTwo: { type: Boolean, reflect: true},
+    stateThree: { type: Boolean, reflect: true},
+    stateFour: { type: Boolean, reflect: true},
+    stateFive: { type: Boolean, reflect: true},
+
+    boxText1: { type: String },
   }
 
   static get styles() {
@@ -19,13 +27,13 @@ class PsuBlock extends LitElement {
       align-items: center;
       padding-top: 30px;
     }
-  .card {
+  :host([stateOne]) .card {
     background-color: #1e407c;
     color: #FFFFFF;
     width: 403.531px;
     height: 342.250px;
   }
-  .content {
+  :host([stateOne]) .content {
     font-family: 'Open Sans', sans-serif;;
     font-size: 2.3rem;
     font-weight: 700;
