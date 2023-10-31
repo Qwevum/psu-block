@@ -106,7 +106,7 @@ class PsuBlock extends LitElement {
     height: 342.250px;
     margin-top: 140px;
     position: relative
-  }
+    }
   .card4::before {
     content: "";
     background: rgba(0, 0, 0, 0.3);
